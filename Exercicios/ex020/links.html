@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline solid black;
+        }
+        a:active {
+            color: lightgreen;
+        }
+
+        a::after {
+            content: '[Link]';
+            text-decoration: nome;
+            font-weight: normal;
+            color: darkgray;
+            font-weight: bold;
+        }
+
+        .especial::after {
+            content: '>';
+            
+        }
+
+        .especial::before {
+            content: '<';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://augustobotao.github.io" class="especial">Repositorio do GitHub</a></li>
+        <li><a href="https://instagram.com/augustobotao">Instagram</a></li>
+        <li><a href="https://augustobotao.io">Portifolio</a></li>
+    </ul>
+</body>
+</html>
